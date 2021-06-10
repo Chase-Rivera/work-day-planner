@@ -1,2 +1,2 @@
 # work-day-planner
-a pllanner to help schedule your day.
+a planner to help schedule your day.
