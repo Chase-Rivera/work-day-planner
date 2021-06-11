@@ -14,14 +14,23 @@ var save = $(".saveBtn")
 $(document).ready(function() {
 
     var rows = $(".row");
-    var time2 = moment().hours()
+    var time2 = moment().hours();
 
     $(".time-block").each(function() {
 
         var hourBlock = parseInt($(this).attribute("id").split("-")[1])
 
         if(hourBlock < time2){
-            $(this).addClass("past")
+            $(this).addClass("past");
+
+        }else if(hourBlock === time2){
+            $(this).removeClass("past");
+            $(this).addClass("present");
+
+        }else{
+            $(this).removeClass("past");
+            $(this).removeClass("present");
+            $(this).addClass("future")
         }
     }
 )})
