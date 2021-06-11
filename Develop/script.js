@@ -14,6 +14,10 @@ var save = $(".saveBtn")
 $(document).ready(function() {
 
     var rows = $(".row");
-
     var time2 = moment().hours()
-})
+
+    $(".time-block").each(function() {
+
+        var hourBlock = parseInt($(this).attribute("id").split("-")[1])
+    }
+)})
