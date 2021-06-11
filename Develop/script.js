@@ -19,5 +19,9 @@ $(document).ready(function() {
     $(".time-block").each(function() {
 
         var hourBlock = parseInt($(this).attribute("id").split("-")[1])
+
+        if(hourBlock < time2){
+            $(this).addClass("past")
+        }
     }
 )})
