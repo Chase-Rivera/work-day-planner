@@ -9,3 +9,11 @@ var date = new Date();
 var time = date.getHours();
 
 var save = $(".saveBtn")
+
+
+$(document).ready(function() {
+
+    var rows = $(".row");
+
+    var time2 = moment().hours()
+})
